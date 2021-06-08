@@ -7,5 +7,5 @@ ENV PSPDEV /usr/local/pspdev
 ENV PATH $PATH:$PSPDEV/bin
 
 RUN git clone https://github.com/pspdev/psptoolchain.git
-RUN cd psptoolchain
+WORKDIR /psptoolchain
 RUN /bin/sh ./toolchain-sudo.sh

@@ -1,7 +1,7 @@
 FROM archlinux
 
 RUN pacman -Syu --noconfirm
-RUN pacman -S base-devel doxygen git libcurl-compat curl openssl libusb libusb-compat ncurses python svn wget tcl tar make cmake 
+RUN pacman -S base-devel doxygen git libcurl-compat libusb libusb-compat python svn wget tcl tar make cmake --noconfirm
 
 ENV PSPDEV /usr/local/pspdev
 ENV PATH $PATH:$PSPDEV/bin
